@@ -1,0 +1,25 @@
+!Case start value, start ID, end ID, step number, and step size
+0.0d0, 1, 1, 1, 1.0d0
+
+!Number of the objects, and type of mesh
+1, 'Q'
+
+~Particle 1
+!Type of particle:sphere Sphr; long Rod LgRd; Dumb-Bell DbBl; Prolong Spheroid; PrSplink between core and shell particle id; Type of mesh to read; Normal direction; Normal vector ref position
+'read', 0, 1, 1, 0.0d0, 0.0d0, 0.0d0
+
+!Type of mesh: "Icshdrl" or "TwoCrcl"; Level of mesh on hemisphere; uneven mesh step scale (0.01~1.99, 1.0->even)
+'Icshdrl', 8, 1.0d0
+
+if need to zoom and move the particle
+2.0d0, 0.0d0, 0.0d0, 0.0d0
+
+!The shape function: b for prolong spheroid, long rod; d for dumb-bell; bowl_a and bowl_b; other shape parameters.
+0.2d0, 0.5d0, 0.6d0, 1.0d0, 2.0d0, 0.5d0, 2.0d0, 2.0d0, 2.0d0
+
+!angle using the row (x), pitch (y) and yaw (z) idea
+0.0d0, 45.0d0, 0.0d0
+
+!particle density; centre of mass
+1.0d0, 0.0d0, 0.0d0, 0.0d0
+~end Particle 1
