@@ -1,0 +1,44 @@
+!Case start value, start ID, end ID, step number, and step size
+0.0d0, 1, 1, 1, 1.0d0
+
+!Number of the objects, and type of mesh
+2, 'Q'
+
+~Particle 1: Ag outer sphere / water-Ag interface
+!shape, core-link-shell, read mesh, code-normal direction, normal reference point (um)
+'Sphr', 0, 0, 1, 0.0d0, 0.0d0, 0.0d0
+
+!mesh generator, Q6 level, spacing scale
+'Icshdrl', 10, 1.0d0
+
+!radius (um), centre (um)
+50.0d-3, 0.0d0, 0.0d0, 0.0d0
+
+!shape parameters (unused for a sphere)
+0.5d0, 0.5d0, 0.6d0, 1.0d0, 2.0d0, 0.5d0, 2.0d0, 2.0d0, 2.0d0
+
+!roll, pitch, yaw (deg)
+0.0d0, 0.0d0, 0.0d0
+
+!density; centre of mass
+1.0d0, 0.0d0, 0.0d0, 0.0d0
+~end Particle 1
+~Particle 2: eccentric Au core / Au-Ag interface
+!shape, link to shell particle 1, read mesh, code-normal direction, normal reference point (um)
+'Sphr', 1, 0, -1, 0.0d0, 0.0d0, 0.0d0
+
+!mesh generator, Q6 level, spacing scale
+'Icshdrl', 10, 1.0d0
+
+!radius (um), centre (um): +5 nm in x; minimum Au-Ag gap is 5 nm
+40.0d-3, 5.0d-3, 0.0d0, 0.0d0
+
+!shape parameters (unused for a sphere)
+0.5d0, 0.5d0, 0.6d0, 1.0d0, 2.0d0, 0.5d0, 2.0d0, 2.0d0, 2.0d0
+
+!roll, pitch, yaw (deg)
+0.0d0, 0.0d0, 0.0d0
+
+!density; centre of mass
+1.0d0, 0.0d0, 0.0d0, 0.0d0
+~end Particle 2
