@@ -1,0 +1,36 @@
+# Build products
+.build/
+*.o
+*.mod
+*.a
+*.so
+*.dylib
+
+# Solver results and logs
+Rslt*
+surface_*.dat
+surface_*.npz
+surface_*.txt
+cross_sections.dat
+Prtl_Orgnl.*
+*.log
+*.out
+*.err
+*.o[0-9]*
+*.e[0-9]*
+
+# Generated figures and numerical archives
+*.npz
+*.npy
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.eps
+
+# Remote-job and local-tool artefacts
+cloud_jobs/
+collected/
+results/
+__pycache__/
+.DS_Store
