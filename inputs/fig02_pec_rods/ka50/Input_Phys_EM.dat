@@ -1,0 +1,48 @@
+!If turn on field slice calculation:
+1, 'zx', 0.0d0,0.0d0,2.5d0, 6.0d0,10.0d0,10.0d0, 200
+
+!If turn on surface enhancement calculation; If turn on x section calculation:
+0, 1, 1.0d3, 0.0d0, 0.0d0, 0.0d0
+
+!FFT
+0, 'CosG', 128, 20.1d0, 64, 1.5d0, 0.1d0, 1.0d0, 1
+
+!incwave_type, polarisation type, incident field order and feature constant; Free space wave length (l) or wave number (k), value; The incoming wave polarisation and direction; and wave phase interval for time plotting"k", 1.0d-9, 1.0d0, 0.0d0, 1.0d0, 0.0d0, 1.5148d0, 0.0d0, 15.0d0
+"pwe", "p", 0, 0.0d0, "k", 50.0d0, 1.0d0,0.0d0,0.0d0, 0.0d0,0.0d0,1.0d0, 15.0d0
+
+!the outer domain medium constants: refractive index and extinction coefficient of the medium and the glass;
+1.0d0, 0.0d0, 1.0d0, 0.0d0, 1.5148d0, 0.0d0
+
+!number of sources in the external domain
+0
+
+~Particle 1
+!Type of boundary condition, and its value if it is a constant or to read the BC from a file
+'PEC', 0.0d0, 'N'
+
+!The inner domain medium constants: refractive index and extinction coefficient
+2.0d0, 0.0d0, 1.0d0, 0.0d0
+
+!number of sources
+0
+~end Particle 1
+~Particle 2
+!Type of boundary condition, and its value if it is a constant or to read the BC from a file
+'PEC', 0.0d0, 'N'
+
+!The inner domain medium constants: refractive index and extinction coefficient
+2.0d0, 0.0d0, 1.0d0, 0.0d0
+
+!number of sources
+0
+~end Particle 2
+~Particle 3
+!Type of boundary condition, and its value if it is a constant or to read the BC from a file
+'PEC', 0.0d0, 'N'
+
+!The inner domain medium constants: refractive index and extinction coefficient
+2.0d0, 0.0d0, 1.0d0, 0.0d0
+
+!number of sources
+0
+~end Particle 3
