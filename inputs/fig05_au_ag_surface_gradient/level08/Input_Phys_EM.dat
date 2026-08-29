@@ -1,0 +1,38 @@
+!If turn on field slice calculation
+0, '3D', 0.0d0,0.0d0,0.0d0, 0.2d0,0.2d0,0.2d0, 100
+
+!If turn on surface enhancement calculation; if turn on cross-section calculation; enclosing radius/centre (um)
+0, 1, 1.0d0, 0.0d0, 0.0d0, 0.0d0
+
+!FFT (off)
+0, 'CosG', 128, 20.1d0, 64, 1.5d0, 0.1d0, 1.0d0, 1
+
+!Plane wave: E0 along +x, propagation +z, free-space wavelength 0.480 um
+"pwe", "p", 0, 0.0d0, "l", 0.480d0, 1.0d0,0.0d0,0.0d0, 0.0d0,0.0d0,1.0d0, 15.0d0
+
+!Exterior water: electric n,k; magnetic n,k; unused prism n,k
+1.33d0, 0.0d0, 1.0d0, 0.0d0, 1.5148d0, 0.0d0
+
+!number of sources in the external domain
+0
+
+~Particle 1: Ag shell
+!boundary condition
+'2SD', 0.0d0, 'N'
+
+!Ag electric n,k at 480 nm (archived table); magnetic n,k
+0.13734195d0, 2.63758568d0, 1.0d0, 0.0d0
+
+!number of sources
+0
+~end Particle 1
+~Particle 2: Au core
+!boundary condition
+'2SD', 0.0d0, 'N'
+
+!Au electric n,k at 480 nm (archived table); magnetic n,k
+1.09553201d0, 1.76334636d0, 1.0d0, 0.0d0
+
+!number of sources
+0
+~end Particle 2
