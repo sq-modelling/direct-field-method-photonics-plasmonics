@@ -6,7 +6,7 @@
 
 ~Particle 1
 !Type of particle:sphere Sphr; long Rod LgRd; Dumb-Bell DbBl; Prolong Spheroid; PrSplink between core and shell particle id; Type of mesh to read; Normal direction; Normal vector ref position
-'LgRd', 0, 0, 1, 0.0d0, 0.0d0, 0.0d0
+'LgRd', 0, 1, 1, 0.0d0, 0.0d0, 0.0d0
 
 !Type of mesh: "Icshdrl" or "TwoCrcl"; Level of mesh on hemisphere; uneven mesh step scale (0.01~1.99, 1.0->even)
 'Icshdrl', 10, 1.0d0
@@ -25,7 +25,7 @@ if need to zoom and move the particle
 ~end Particle 1
 ~Particle 2
 !Type of particle:sphere Sphr; long Rod LgRd; Dumb-Bell DbBl; Prolong Spheroid; PrSplink between core and shell particle id; Type of mesh to read; Normal direction; Normal vector ref position
-'LgRd', 0, 0, 1, 0.0d0, 0.0d0, 0.0d0
+'LgRd', 0, 1, 1, 0.0d0, 0.0d0, 0.0d0
 
 !Type of mesh: "Icshdrl" or "TwoCrcl"; Level of mesh on hemisphere; uneven mesh step scale (0.01~1.99, 1.0->even)
 'Icshdrl', 10, 1.0d0
@@ -44,7 +44,7 @@ if need to zoom and move the particle
 ~end Particle 2
 ~Particle 3
 !Type of particle:sphere Sphr; long Rod LgRd; Dumb-Bell DbBl; Prolong Spheroid; PrSplink between core and shell particle id; Type of mesh to read; Normal direction; Normal vector ref position
-'LgRd', 0, 0, 1, 0.0d0, 0.0d0, 0.0d0
+'LgRd', 0, 1, 1, 0.0d0, 0.0d0, 0.0d0
 
 !Type of mesh: "Icshdrl" or "TwoCrcl"; Level of mesh on hemisphere; uneven mesh step scale (0.01~1.99, 1.0->even)
 'Icshdrl', 10, 1.0d0

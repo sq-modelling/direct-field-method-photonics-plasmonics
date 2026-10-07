@@ -1,0 +1,28 @@
+{
+  "title": "Direct Field Method examples for photonics and plasmonics",
+  "version": "0.1.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "BSD-3-Clause",
+  "creators": [
+    {
+      "name": "Sun, Qiang",
+      "affiliation": "RMIT University"
+    }
+  ],
+  "description": "<p>Fortran programs and case inputs for the numerical examples of the tutorial <em>Computational photonics and plasmonics: A direct physical approach</em>, including the gap-graded surface meshes of the three-rod example and the Python script that generates them; a Python exercise; the numerical results and Python plotting scripts for Figs. 2, 3, 5 and 7; and a Python post-processing script that computes the fields and radar cross section of perfect conductors from the surface current of the magnetic-field solution, as used for the low-frequency case of Fig. 3. The Direct Field Method solves Maxwell's equations in the frequency domain directly for the Cartesian components of the electric and magnetic fields with non-singular boundary integral equations discretized by curved six-node quadratic triangular elements. Four programs cover perfectly conducting and dielectric scatterers, the spectra and surface-field gradients of eccentric Au-core/Ag-shell nanoparticles, and optical forces and torques; the exercise compares the computed surface field of a perfectly conducting sphere with Mie theory.</p>",
+  "keywords": [
+    "computational electromagnetics",
+    "boundary integral method",
+    "Direct Field Method",
+    "non-singular boundary integral equations",
+    "quadratic boundary elements",
+    "Maxwell's equations",
+    "light scattering",
+    "plasmonics",
+    "optical forces",
+    "Fortran"
+  ],
+  "notes": "Companion code to the article 'Computational photonics and plasmonics: A direct physical approach' by E. Klaseboer, D. Y. C. Chan, A. J. Yuffa, A. C. Yucel and Q. Sun, submitted to Journal of Physics: Photonics (2026).",
+  "language": "eng"
+}

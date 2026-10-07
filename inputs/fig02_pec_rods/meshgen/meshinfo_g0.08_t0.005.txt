@@ -1,0 +1,4 @@
+h_tip=0.005 h_side=0.08 grad=0.3 aspect=1 h_far=None
+rod 1: N=4254 elems=2126 rings=54 closed=True mids2=True euler=2 outward=True area=5.323564 (exact 5.323717) vol=0.727764 (exact 0.727788) max|node-surface|=3.4e-16 min angle=28.8 deg edge 0.0050..0.1116 a
+rod 2: N=4254 elems=2126 rings=54 closed=True mids2=True euler=2 outward=True area=5.323564 (exact 5.323717) vol=0.727764 (exact 0.727788) max|node-surface|=5.6e-16 min angle=28.8 deg edge 0.0050..0.1116 a
+rod 3: N=3370 elems=1684 rings=47 closed=True mids2=True euler=2 outward=True area=3.479496 (exact 3.479529) vol=0.455066 (exact 0.455073) max|node-surface|=2.3e-16 min angle=25.6 deg edge 0.0049..0.1082 a

@@ -1,0 +1,60 @@
+# Citation metadata for this repository (Citation File Format 1.2.0).
+#
+# date-released and doi are added once Zenodo has archived the release.
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata below, together
+  with the associated article listed under references.
+type: software
+title: Direct Field Method examples for photonics and plasmonics
+version: 0.1.0
+# date-released: "YYYY-MM-DD"
+# doi: 10.5281/zenodo.XXXXXXX
+license: BSD-3-Clause
+repository-code: "https://github.com/sq-modelling/direct-field-method-photonics-plasmonics"
+abstract: >-
+  Fortran programs and case inputs for the numerical examples of the tutorial
+  "Computational photonics and plasmonics: A direct physical approach",
+  including the gap-graded surface meshes of the three-rod example and the
+  Python script that generates them; a Python exercise that compares a computed
+  result with Mie theory; the numerical results and Python plotting scripts for
+  Figs. 2, 3, 5 and 7; and a Python post-processing script that computes the
+  fields and radar cross section of perfect conductors from the surface current
+  of the magnetic-field solution, as used for the low-frequency case of Fig. 3.
+  The Direct Field Method solves Maxwell's equations in the
+  frequency domain directly for the Cartesian components of the electric and
+  magnetic fields with non-singular boundary integral equations discretized by
+  curved six-node quadratic triangular elements.
+authors:
+  - family-names: Sun
+    given-names: Qiang
+    affiliation: "Department of Physics, School of Science, RMIT University, Melbourne, Australia"
+keywords:
+  - computational electromagnetics
+  - boundary integral method
+  - Direct Field Method
+  - non-singular boundary integral equations
+  - quadratic boundary elements
+  - Maxwell's equations
+  - light scattering
+  - plasmonics
+  - optical forces
+  - Fortran
+references:
+  - type: article
+    title: "Computational photonics and plasmonics: A direct physical approach"
+    authors:
+      - family-names: Klaseboer
+        given-names: Evert
+      - family-names: Chan
+        given-names: Derek Y. C.
+      - family-names: Yuffa
+        given-names: Alex J.
+      - family-names: Yucel
+        given-names: Abdulkadir C.
+      - family-names: Sun
+        given-names: Qiang
+    journal: "Journal of Physics: Photonics"
+    status: submitted
+    year: 2026
+    notes: "Manuscript submitted to Journal of Physics: Photonics, October 2026."
