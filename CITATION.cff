@@ -1,6 +1,7 @@
 # Citation metadata for this repository (Citation File Format 1.2.0).
 #
-# date-released and doi are added once Zenodo has archived the release.
+# doi is the version DOI of release v0.1.0 archived at Zenodo; the concept DOI
+# 10.5281/zenodo.23205795 always resolves to the latest version.
 cff-version: 1.2.0
 message: >-
   If you use this software, please cite it using the metadata below, together
@@ -8,8 +9,8 @@ message: >-
 type: software
 title: Direct Field Method examples for photonics and plasmonics
 version: 0.1.0
-# date-released: "YYYY-MM-DD"
-# doi: 10.5281/zenodo.XXXXXXX
+date-released: "2026-10-07"
+doi: 10.5281/zenodo.23205796
 license: BSD-3-Clause
 repository-code: "https://github.com/sq-modelling/direct-field-method-photonics-plasmonics"
 abstract: >-

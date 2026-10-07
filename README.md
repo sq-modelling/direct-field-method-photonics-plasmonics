@@ -1,5 +1,7 @@
 # Direct Field Method examples for photonics and plasmonics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23205796.svg)](https://doi.org/10.5281/zenodo.23205796)
+
 This repository is the minimal source, input, and figure-data companion to the
 manuscript *Computational photonics and plasmonics: A direct physical approach*
 (manuscript submitted to *Journal of Physics: Photonics*, October 2026). It
@@ -12,7 +14,8 @@ perfect conductors from the surface current of the magnetic-field solution, as
 used for the low-frequency case of Fig. 3 (`postprocessing/`), subject to the
 explicit limitations below.
 
-- Version: **0.1.0**
+- Version: **0.1.0**, archived at Zenodo: [doi:10.5281/zenodo.23205796](https://doi.org/10.5281/zenodo.23205796)
+  (all versions: [doi:10.5281/zenodo.23205795](https://doi.org/10.5281/zenodo.23205795))
 - Primary software developer: **Qiang Sun**
 - Recorded sphere-mesh and cube-mesh contributions: **Evert Klaseboer**
 - Licence: **BSD 3-Clause License**
