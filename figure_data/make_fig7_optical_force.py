@@ -35,6 +35,25 @@ from pathlib import Path
 import numpy as np, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import subprocess, glob, os
+import matplotlib.font_manager as fm
+
+
+def _register_termes():
+    """Make TeX Gyre Termes available to Matplotlib if a TeX installation provides it."""
+    try:
+        p = subprocess.run(['kpsewhich', 'texgyretermes-regular.otf'], capture_output=True, text=True,
+                           timeout=20).stdout.strip()
+    except Exception:
+        p = ''
+    for f in glob.glob(os.path.join(os.path.dirname(p), 'texgyretermes-*.otf')) if p else []:
+        try:
+            fm.fontManager.addfont(f)
+        except Exception:
+            pass
+
+
+_register_termes()
 from matplotlib.patches import Polygon, Arc, FancyArrowPatch
 from matplotlib.ticker import MultipleLocator, AutoMinorLocator
 
@@ -84,7 +103,7 @@ ls1 = (0, (6, 3))            # particle 1: dashed
 ls2 = '-'                    # particle 2: solid
 
 fig = plt.figure(figsize=(6.5, 5.7))
-gs = fig.add_gridspec(2, 2, left=0.095, right=0.985, bottom=0.08, top=0.985, wspace=0.32, hspace=0.32)
+gs = fig.add_gridspec(2, 2, left=0.095, right=0.965, bottom=0.08, top=0.985, wspace=0.32, hspace=0.32)
 axA = fig.add_subplot(gs[0, 0]); axB = fig.add_subplot(gs[0, 1])
 axC = fig.add_subplot(gs[1, 0]); axD = fig.add_subplot(gs[1, 1])
 

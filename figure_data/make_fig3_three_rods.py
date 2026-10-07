@@ -193,7 +193,7 @@ def colourbar(im, l, w, ticks, extend):
     fig.text((l - 0.12) / W, (cb_y + 0.0425) / H, r'$\mathrm{Re}(E_x^{\rm tot}/E_0)$', ha='right', va='center',
              fontsize=10)
 colourbar(ims[0], 1.40, 1.05, [0, 1, 2], 'max')          # (a)
-colourbar(ims[1], 4.05, 2.55, [-2, -1, 0, 1, 2], 'both')    # (b), (c)
+colourbar(ims[1], 4.05, 2.55, [-2, -1, 0, 1, 2], 'neither')    # (b), (c)
 
 # far-field polar plots, centred under the field maps, each with its radial dB scale below
 pd = 1.78; pb = 0.50

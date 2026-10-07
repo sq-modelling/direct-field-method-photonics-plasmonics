@@ -21,6 +21,6 @@ specific prior written permission.
 
 ## Associated manuscript
 
-This repository accompanies *Computational photonics and plasmonics: A direct physical approach*, by Evert Klaseboer, Derek Y. C. Chan, Alex J. Yuffa, Abdulkadir C. Yucel, and Qiang Sun. Qiang Sun is the corresponding author (`qiang.sun@rmit.edu.au`).
+This repository accompanies *Computational photonics and plasmonics: a direct physical approach*, by Evert Klaseboer, Derek Y. C. Chan, Alex J. Yuffa, Abdulkadir C. Yucel, and Qiang Sun. Qiang Sun is the corresponding author (`qiang.sun@rmit.edu.au`).
 
 Manuscript authorship is listed for scientific context and is not, by itself, treated here as evidence that every manuscript author wrote software in this repository. Third-party methods, input-data sources, and external libraries are identified in `THIRD_PARTY_NOTICES.md`.

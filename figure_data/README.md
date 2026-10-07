@@ -193,9 +193,9 @@ The scripts for Figs. 2, 5 and 7 were run in this directory with Python
 3.12, NumPy 2.1, SciPy 1.17, and Matplotlib 3.9. They printed the values given
 above, and the three tables written to `output/` were identical to the copies
 supplied here. Rasterised at 150 dpi, the regenerated PDF files were
-pixel-identical to the figures of the manuscript: Fig. 2 with the fallback font
-DejaVu Serif, with which the manuscript figure was made, and Figs. 5 and 7 with
-TeX Gyre Termes installed. The Fig. 3 script was run in the same way with
+pixel-identical to the figures of the manuscript, with TeX Gyre Termes found in
+a TeX installation through `kpsewhich` (all four scripts
+register it automatically when it is available). The Fig. 3 script was run in the same way with
 Matplotlib 3.9.2 and TeX Gyre Termes (which it also finds in a TeX
 installation through `kpsewhich`); `output/fig3_summary.csv` was identical to
 the copy supplied here, and the PDF, rasterised at 150 dpi, was pixel-identical

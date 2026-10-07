@@ -29,6 +29,25 @@ from pathlib import Path
 import numpy as np, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import subprocess, glob, os
+import matplotlib.font_manager as fm
+
+
+def _register_termes():
+    """Make TeX Gyre Termes available to Matplotlib if a TeX installation provides it."""
+    try:
+        p = subprocess.run(['kpsewhich', 'texgyretermes-regular.otf'], capture_output=True, text=True,
+                           timeout=20).stdout.strip()
+    except Exception:
+        p = ''
+    for f in glob.glob(os.path.join(os.path.dirname(p), 'texgyretermes-*.otf')) if p else []:
+        try:
+            fm.fontManager.addfont(f)
+        except Exception:
+            pass
+
+
+_register_termes()
 from matplotlib.patches import Circle, FancyArrowPatch
 from matplotlib.ticker import MultipleLocator, AutoMinorLocator
 from scipy.special import spherical_jn, spherical_yn

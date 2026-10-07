@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23205796.svg)](https://doi.org/10.5281/zenodo.23205796)
 
 This repository is the minimal source, input, and figure-data companion to the
-manuscript *Computational photonics and plasmonics: A direct physical approach*
+manuscript *Computational photonics and plasmonics: a direct physical approach*
 (manuscript submitted to *Journal of Physics: Photonics*, October 2026). It
 contains the Fortran programs and case inputs needed for the numerical examples
 in Figs. 1–7 (including the gap-graded surface meshes of Fig. 3 and the Python
@@ -407,7 +407,7 @@ by LU factorisation, so memory grows as `N^2` and time as `N^3`. As a guide,
 Table 1 of the manuscript lists, for the three rods of Fig. 3, a system matrix
 of 20.3 GB and a peak memory of 29.9 GB at `k_out a = 0.001` and 5 (11 878
 nodes), and 251.6 GB and 365 GB at `k_out a = 50` (41 798 nodes), and 76.5 GB
-and 80.2 GB for the two lenses of Fig. 4.
+and 86.1 GB for the two lenses of Fig. 4.
 
 Apart from the results and plotting scripts for Figs. 2, 3, 5 and 7 in
 `figure_data/` and the post-processing script in `postprocessing/`, this
@@ -469,11 +469,12 @@ licence does not override the separate provenance and dependency notices in
 ## Citation
 
 E. Klaseboer, D. Y. C. Chan, A. J. Yuffa, A. C. Yucel, and Q. Sun,
-“Computational photonics and plasmonics: A direct physical approach,”
+“Computational photonics and plasmonics: a direct physical approach,”
 manuscript submitted to *Journal of Physics: Photonics* (2026).
 
 Citation metadata for the software are given in `CITATION.cff`, and the
-metadata for the Zenodo archive in `.zenodo.json`. The release tag (`v0.1.0`)
-and the Zenodo DOI will be added to these files and to this section after the
-GitHub release has been archived; until then, please cite the repository URL
-and version 0.1.0.
+metadata for the Zenodo archive in `.zenodo.json`. Release `v0.1.0` is
+archived at Zenodo with the version DOI
+[10.5281/zenodo.23205796](https://doi.org/10.5281/zenodo.23205796); the concept
+DOI [10.5281/zenodo.23205795](https://doi.org/10.5281/zenodo.23205795) always
+resolves to the latest version.

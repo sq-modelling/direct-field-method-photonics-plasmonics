@@ -15,7 +15,7 @@ license: BSD-3-Clause
 repository-code: "https://github.com/sq-modelling/direct-field-method-photonics-plasmonics"
 abstract: >-
   Fortran programs and case inputs for the numerical examples of the tutorial
-  "Computational photonics and plasmonics: A direct physical approach",
+  "Computational photonics and plasmonics: a direct physical approach",
   including the gap-graded surface meshes of the three-rod example and the
   Python script that generates them; a Python exercise that compares a computed
   result with Mie theory; the numerical results and Python plotting scripts for
@@ -43,7 +43,7 @@ keywords:
   - Fortran
 references:
   - type: article
-    title: "Computational photonics and plasmonics: A direct physical approach"
+    title: "Computational photonics and plasmonics: a direct physical approach"
     authors:
       - family-names: Klaseboer
         given-names: Evert
